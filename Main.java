@@ -12,7 +12,5 @@ public class Main {
         country[0].print();
 
         CountryParameters.printAll(country);
-
-
     }
 }
