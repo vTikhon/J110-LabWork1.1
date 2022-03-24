@@ -1,4 +1,4 @@
-package ru.avalon.vergentev.labwork1;
+package ru.avalon.vergentev.labwork1.VergentevLabWork1.src.ru.avalon.vergentev.labwork1;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,13 +9,6 @@ public class Main {
         country[3] = new CountryParameters("Andorra", 0.467, 85400, "Andorra la Vella", 22600);
         country[4] = new CountryParameters("Singapore", 0.725, 5700000);
 
-        country[0].print();
-
         CountryParameters.printAll(country);
-
-
-
-
-
     }
 }

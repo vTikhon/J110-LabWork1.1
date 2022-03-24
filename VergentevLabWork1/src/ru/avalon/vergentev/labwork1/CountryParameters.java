@@ -1,4 +1,4 @@
-package ru.avalon.vergentev.labwork1;
+package ru.avalon.vergentev.labwork1.VergentevLabWork1.src.ru.avalon.vergentev.labwork1;
 
 public class CountryParameters {
     private String nameOfCountry;
@@ -9,19 +9,17 @@ public class CountryParameters {
 
 
     //Constructors block
-    public CountryParameters(String nameOfCountry, double square, long populationOfCountry, String nameOfCity, long populationOfCity) {
+    public CountryParameters(String nameOfCountry, double square, long populationOfCountry) {
         setNameOfCountry(nameOfCountry);
         setSquare(square);
         setPopulationOfCountry(populationOfCountry);
+    }
+
+    public CountryParameters(String nameOfCountry, double square, long populationOfCountry, String nameOfCity, long populationOfCity) {
+        this(nameOfCountry, square, populationOfCountry);
         setNameOfCity(nameOfCity);
         setPopulationOfCity(populationOfCity);
     }
-
-    public CountryParameters(String nameOfCountry, double square, long populationOfCountry) {
-        this(nameOfCountry, square, populationOfCountry, null, 0);
-    }
-
-
 
 
 
