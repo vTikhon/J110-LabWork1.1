@@ -39,8 +39,8 @@ public class CountryParameters {
     }
 
     public static void printAll(CountryParameters [] country) {
-        for (int i = 0; i < country.length; i++) {
-            country[i].print();
+        for (CountryParameters i : country) {
+            i.print();
         }
     }
 
