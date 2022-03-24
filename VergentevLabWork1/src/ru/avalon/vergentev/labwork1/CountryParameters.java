@@ -9,19 +9,17 @@ public class CountryParameters {
 
 
     //Constructors block
-    public CountryParameters(String nameOfCountry, double square, long populationOfCountry, String nameOfCity, long populationOfCity) {
+    public CountryParameters(String nameOfCountry, double square, long populationOfCountry) {
         setNameOfCountry(nameOfCountry);
         setSquare(square);
         setPopulationOfCountry(populationOfCountry);
+    }
+
+    public CountryParameters(String nameOfCountry, double square, long populationOfCountry, String nameOfCity, long populationOfCity) {
+        this(nameOfCountry, square, populationOfCountry);
         setNameOfCity(nameOfCity);
         setPopulationOfCity(populationOfCity);
     }
-
-    public CountryParameters(String nameOfCountry, double square, long populationOfCountry) {
-        this(nameOfCountry, square, populationOfCountry, null, 0);
-    }
-
-
 
 
 
@@ -41,12 +39,10 @@ public class CountryParameters {
     }
 
     public static void printAll(CountryParameters [] country) {
-            country[0].print();
-            country[1].print();
-            country[2].print();
-            country[3].print();
-            country[4].print();
+        for (CountryParameters i : country) {
+            i.print();
         }
+    }
 
 
 

@@ -1,5 +1,7 @@
 package ru.avalon.vergentev.labwork1;
 
+import static ru.avalon.vergentev.labwork1.CountryParameters.*;
+
 public class Main {
     public static void main(String[] args) {
         CountryParameters [] country = new CountryParameters [5];
@@ -9,13 +11,7 @@ public class Main {
         country[3] = new CountryParameters("Andorra", 0.467, 85400, "Andorra la Vella", 22600);
         country[4] = new CountryParameters("Singapore", 0.725, 5700000);
 
-        country[0].print();
-
         CountryParameters.printAll(country);
-
-
-
-
-
+        
     }
 }
