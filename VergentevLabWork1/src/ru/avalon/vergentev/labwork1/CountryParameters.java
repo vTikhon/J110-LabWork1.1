@@ -39,12 +39,10 @@ public class CountryParameters {
     }
 
     public static void printAll(CountryParameters [] country) {
-            country[0].print();
-            country[1].print();
-            country[2].print();
-            country[3].print();
-            country[4].print();
+        for (int i = 0; i < country.length; i++) {
+            country[i].print();
         }
+    }
 
 
 
