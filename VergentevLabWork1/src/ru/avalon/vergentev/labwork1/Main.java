@@ -10,5 +10,6 @@ public class Main {
         country[4] = new CountryParameters("Singapore", 0.725, 5700000);
 
         CountryParameters.printAll(country);
+
     }
 }
